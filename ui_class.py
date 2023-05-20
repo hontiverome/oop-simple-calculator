@@ -42,3 +42,6 @@ class UI():
             time.sleep(1.5)
         # Print the Result
         print(f"\n\nHere is your result\n:{result}")
+
+# HONTIVEROS, JEROME ANDREI O.
+# BSCPE 1-5

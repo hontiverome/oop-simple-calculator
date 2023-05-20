@@ -43,3 +43,6 @@ def SimpleCalculator():
     userInterface.animated(firstN,secondN,calculate.results)
 
 SimpleCalculator()
+
+# HONTIVEROS, JEROME ANDREI O.
+# BSCPE 1-5
