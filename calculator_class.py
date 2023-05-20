@@ -12,17 +12,17 @@ class Calculator:
         self.number2-float(secondN)
     
     def addition(self):
-        sum=self.number1+self.number2
-        return sum
+        result=self.number1+self.number2
+        return result
     
     def subtraction(self):
-        difference=self.number1-self.number2
-        return difference
+        result=self.number1-self.number2
+        return result
     
     def multiplication(self):
-        product=self.number1*self.number2
-        return product
+        result=self.number1*self.number2
+        return result
     
     def division(self):
-        quotient=self.number1/self.number2
-        return quotient
+        result=self.number1/self.number2
+        return result
