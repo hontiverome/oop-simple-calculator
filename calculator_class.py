@@ -1,10 +1,11 @@
 # Calculator class
 from ui_class import UI
 class Calculator:
-    def __init__(self, firstN, secondN) -> None:
+    def __init__(self, firstN, secondN, result) -> None:
         self.number1=firstN 
         self.number2=secondN
-    
+        self.results=result
+        
     def inputNum1(self, firstN):
         self.number1=float(firstN)
 
@@ -13,16 +14,16 @@ class Calculator:
     
     def addition(self):
         result=self.number1+self.number2
-        return result
+        self.results=float(result)
     
     def subtraction(self):
         result=self.number1-self.number2
-        return result
+        self.results=float(result)
     
     def multiplication(self):
         result=self.number1*self.number2
-        return result
+        self.results=float(result)
     
     def division(self):
         result=self.number1/self.number2
-        return result
+        self.results=float(result)
