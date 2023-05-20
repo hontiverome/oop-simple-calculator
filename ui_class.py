@@ -3,8 +3,9 @@
 class UI:
     def __init__(self) -> None:
         print("Welcome to the Calculator!")
+        self.operation=operation
         
-    def start(self):
+    def start():
         print("Welcome to the Calculator!")
     
     def intro_add(self):
