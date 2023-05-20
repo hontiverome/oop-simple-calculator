@@ -2,12 +2,15 @@
 from ui_class import UI
 from calculator_class import Calculator
 
+def Introduction():
+    import time
+    print("Welcome to the Calculator!")
+    time.sleep(2)
 
 def SimpleCalculator():
     # initializes class
     calculate = Calculator('', '', '')
     userInterface = UI('')
-    userInterface.start
     # takes input from user that determines the type of arithmetic operation to use
     while True:
         user_choice = str(input("\nType the symbol of the arithmetic operation you would like to use\n( + , - , * , / )\n: "))
@@ -46,10 +49,7 @@ def SimpleCalculator():
     # prints out results
     userInterface.animated(firstN, secondN, calculate.results)
 
-
-# executes the code
-try:
-    SimpleCalculator()
+def Retry():
     while True:
         again=str(input("Try again?\n: "))
         if again=='y':
@@ -59,6 +59,12 @@ try:
             break
         else:
             print("Invalid.\n")
+
+# executes the code
+try:
+    Introduction()
+    SimpleCalculator()
+    Retry()
 except:
     print("\nInvalid.\n")
 finally:
