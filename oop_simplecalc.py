@@ -5,11 +5,10 @@ from calculator_class import Calculator
 
 def SimpleCalculator():
     calculate = Calculator(1, 1, 1)
-    userInterface = UI
-    userInterface.start()
+    userInterface = UI('')
+    userInterface.start
     while True:
-        user_choice = str(input(
-            "\nType the symbol of the arithmetic operation you would like to use\n( + , - , * , / )\n: "))
+        user_choice = str(input("\nType the symbol of the arithmetic operation you would like to use\n( + , - , * , / )\n: "))
         if user_choice == '+':
             userInterface.intro_add()
             break
@@ -41,6 +40,6 @@ def SimpleCalculator():
     elif user_choice == '/':
         calculate.division()
 
-    print(calculate.results)
+    userInterface.animated()
 
 SimpleCalculator()

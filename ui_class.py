@@ -1,6 +1,6 @@
 # UI class
 # creates class
-class UI:
+class UI():
     def __init__(self, operation) -> None:
         self.arithmetic_operation=operation
         
@@ -28,7 +28,6 @@ class UI:
         self.arithmetic_operation = operation 
 
     def animated(self):
-        from oop_simplecalc import firstN
         import time
         print('\nOperation')
         time.sleep(1)
@@ -36,10 +35,10 @@ class UI:
         time.sleep(1.5)
         print(f"Numbers to be computed")
         time.sleep(1)
-        print(f': {Calculator.number1, Calculator.number2}')
+        print(f': {self.number1, self.number2}')
         animation = '...'
         for i in range(len(animation)):
             print(animation[i], end='', flush=True)
             time.sleep(1.5)
         # Print the Result
-        print(f"\n\nHere is your result\n:{Calculator.results}")
+        print(f"\n\nHere is your result\n:{self.results}")
