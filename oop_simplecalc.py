@@ -14,5 +14,5 @@ def Animated():
         elif user_choice=='/':
             animated.intro_div()
         else:
-            print("Invalid.")
+            print("Invalid.") 
 Animated()
