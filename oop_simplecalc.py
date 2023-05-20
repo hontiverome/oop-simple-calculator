@@ -40,6 +40,6 @@ def SimpleCalculator():
     elif user_choice == '/':
         calculate.division()
 
-    userInterface.animated()
+    userInterface.animated(firstN,secondN,calculate.results)
 
 SimpleCalculator()
