@@ -5,4 +5,7 @@ class Calculator:
         self.number1=firstN 
         self.number2=secondN
     
-    def 
+    def inputNum(self, firstN, secondN):
+        self.number1=float(firstN)
+        self.number2=float(secondN)
+        
