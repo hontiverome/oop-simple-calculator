@@ -50,10 +50,19 @@ def SimpleCalculator():
 # executes the code
 try:
     SimpleCalculator()
+    while True:
+        again=str(input("Try again?\n: "))
+        if again=='y':
+            SimpleCalculator()
+            continue
+        elif again=='n':
+            break
+        else:
+            print("Invalid.\n")
 except:
-    print("Invalid.")
+    print("\nInvalid.\n")
 finally:
-    print("Thank you!")
+    print("\nThank you!")
 
 # HONTIVEROS, JEROME ANDREI O.
 # BSCPE 1-5
