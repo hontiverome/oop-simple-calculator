@@ -10,7 +10,7 @@ class Calculator:
         self.number1=float(firstN)
 
     def inputNum2(self, secondN):
-        self.number2-float(secondN)
+        self.number2=float(secondN)
     
     def addition(self):
         result=self.number1+self.number2
