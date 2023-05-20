@@ -20,10 +20,10 @@ class UI:
         print("\nYou chose division")
         operation = str('Division')
 
-    def animated(self):
+    def animated():
         print('\nOperation')
         time.sleep(1)
-        print(f': {self.operation}')
+        print(f': {operation}')
         time.sleep(1.5)
         print(f"Numbers to be computed")
         time.sleep(1)
