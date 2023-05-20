@@ -1,7 +1,7 @@
 # UI class
 # creates class
 class UI:
-    def __init__(self) -> None:
+    def __init__(self, operation) -> None:
         print("Welcome to the Calculator!")
         self.operation = operation
 
@@ -17,12 +17,12 @@ class UI:
         operation = 'Subtraction'
 
     def intro_mul(self):
-        print("\nYou chose subtraction")
-        operation = 'Subtraction'
+        print("\nYou chose multiplication")
+        operation = 'Multiplication'
 
     def intro_div(self,):
-        print("\nYou chose subtraction")
-        operation = 'Subtraction'
+        print("\nYou chose division")
+        operation = 'Division'
 
     def animated(self):
         print('\nOperation')
