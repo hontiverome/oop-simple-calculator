@@ -1,18 +1,22 @@
 # Redo the Simple Calculator with OOP
 from ui_class import UI
-def Animated():
-    animated=UI
-    animated.start()
+from calculator_class import Calculator
+
+def SimpleCalculator():
+    calculate=Calculator
+    ui=UI
+    ui.start()
     while True:
         user_choice=str(input("\nType the symbol of the arithmetic operation you would like to use\n( + , - , * , / )\n: "))
         if user_choice=='+':
-            animated.intro_add()
+            ui.intro_add()
         elif user_choice=='-':
-            animated.intro_sub()
+            ui.intro_sub()
         elif user_choice=='*':
-            animated.intro_mul()
+            ui.intro_mul()
         elif user_choice=='/':
-            animated.intro_div()
+            ui.intro_div()
         else:
-            print("Invalid.") 
-Animated()
+            print("Invalid.")
+            
+SimpleCalculator()
