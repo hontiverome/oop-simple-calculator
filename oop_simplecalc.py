@@ -6,13 +6,13 @@ def Animated():
     while True:
         user_choice=str(input("\nType the symbol of the arithmetic operation you would like to use\n( + , - , * , / )\n: "))
         if user_choice=='+':
-            animated.intro_add(user_choice)
+            animated.intro_add()
         elif user_choice=='-':
-            animated.intro_sub(user_choice)
+            animated.intro_sub()
         elif user_choice=='*':
-            animated.intro_mul(user_choice)
+            animated.intro_mul()
         elif user_choice=='/':
-            animated.intro_div(user_choice)
+            animated.intro_div()
         else:
             print("Invalid.")
 Animated()
