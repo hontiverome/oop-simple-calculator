@@ -1,12 +1,10 @@
 # UI class
 # creates class
 class UI():
+    # initializes variables
     def __init__(self, operation) -> None:
         self.arithmetic_operation=operation
-        
-    def start():
-        print("Welcome to the Calculator!")
-
+      
     def intro_add(self):
         print("\nYou chose addition")
         operation = str('Addition')
@@ -35,7 +33,7 @@ class UI():
         time.sleep(1.5)
         print(f"Numbers to be computed")
         time.sleep(1)
-        print(f': {number1, number2}')
+        print(f': {number1, number2}\n')
         animation = '...'
         for i in range(len(animation)):
             print(animation[i], end='', flush=True)
