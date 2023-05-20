@@ -10,19 +10,19 @@ class UI:
 
     def intro_add(self):
         print("\nYou chose addition")
-        operation = 'Addition'
+        self.operation = 'Addition'
 
     def intro_sub(self):
         print("\nYou chose subtraction")
-        operation = 'Subtraction'
+        self.operation = 'Subtraction'
 
     def intro_mul(self):
         print("\nYou chose multiplication")
-        operation = 'Multiplication'
+        self.operation = 'Multiplication'
 
     def intro_div(self,):
         print("\nYou chose division")
-        operation = 'Division'
+        self.operation = 'Division'
 
     def animated(self):
         print('\nOperation')
