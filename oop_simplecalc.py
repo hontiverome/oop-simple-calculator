@@ -4,9 +4,11 @@ from calculator_class import Calculator
 
 
 def SimpleCalculator():
-    calculate = Calculator(1, 1, 1)
+    # initializes class
+    calculate = Calculator('', '', '')
     userInterface = UI('')
     userInterface.start
+    # takes input from user that determines the type of arithmetic operation to use
     while True:
         user_choice = str(input("\nType the symbol of the arithmetic operation you would like to use\n( + , - , * , / )\n: "))
         if user_choice == '+':
@@ -25,12 +27,13 @@ def SimpleCalculator():
             print("Invalid.")
         return user_choice
 
-    # Takes input and stores it into variables
+    # takes input and stores it into variables
     firstN = float(input("\nWhat is your first number?\n"))
     calculate.inputNum1(firstN)
     secondN = float(input("\nWhat is your second number?\n"))
     calculate.inputNum2(secondN)
 
+    # does the calculations based on the arithmetic operation
     if user_choice == '+':
         calculate.addition()
     elif user_choice == '-':
@@ -40,9 +43,17 @@ def SimpleCalculator():
     elif user_choice == '/':
         calculate.division()
 
-    userInterface.animated(firstN,secondN,calculate.results)
+    # prints out results
+    userInterface.animated(firstN, secondN, calculate.results)
 
-SimpleCalculator()
+
+# executes the code
+try:
+    SimpleCalculator()
+except:
+    print("Invalid.")
+finally:
+    print("Thank you!")
 
 # HONTIVEROS, JEROME ANDREI O.
 # BSCPE 1-5
