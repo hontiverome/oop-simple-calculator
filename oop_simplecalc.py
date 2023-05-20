@@ -51,7 +51,7 @@ def SimpleCalculator():
 
 def Retry():
     while True:
-        again=str(input("Try again?\n: "))
+        again=str(input("\nTry again?\n: "))
         if again=='y':
             SimpleCalculator()
             continue
