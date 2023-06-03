@@ -34,6 +34,8 @@ class Calculator:
     def division(self):
         result=self.number1/self.number2
         self.results=float(result)
-        
+
+class ScientificCalculator(Calculator):
+    
 # HONTIVEROS, JEROME ANDREI O.
 # BSCPE 1-5
