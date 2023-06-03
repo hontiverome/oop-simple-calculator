@@ -36,6 +36,18 @@ class Calculator:
         self.results=float(result)
 
 class ScientificCalculator(Calculator):
-    
+    # initializes variables
+    def __init__(self, firstN, secondN, result):
+        super().__init__(firstN, secondN, result)
+
+    # exponentiation
+    def exponentiation(self):
+        result = self.number1 ** self.number2
+        self.results = float(result)
+
+    # square root
+    def squareRoot(self):
+        result = self.number1 ** 0.5
+        self.results = float(result)
 # HONTIVEROS, JEROME ANDREI O.
 # BSCPE 1-5
