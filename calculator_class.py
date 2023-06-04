@@ -49,5 +49,10 @@ class ScientificCalculator(Calculator):
     def squareRoot(self):
         result = self.number1 ** 0.5
         self.results = float(result)
+        
+    # cube root
+    def cubeRoot(self):
+        result = self.number1 ** (1/3)
+        self.results = float(result)
 # HONTIVEROS, JEROME ANDREI O.
 # BSCPE 1-5
