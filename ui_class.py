@@ -28,6 +28,24 @@ class UI():
         print("\nYou chose division")
         operation = str('Division')
         self.arithmetic_operation = operation 
+        
+    # registers exponentiation unto variable operation
+    def intro_exp(self):
+        print("\nYou chose exponentiation")
+        operation = str('Exponentiation')
+        self.arithmetic_operation = operation
+
+    # registers square root unto variable operation
+    def intro_sqrt(self):
+        print("\nYou chose square root")
+        operation = str('Square Root')
+        self.arithmetic_operation = operation
+
+    # registers cube root unto variable operation
+    def intro_cbrt(self):
+        print("\nYou chose cube root")
+        operation = str('Cube Root')
+        self.arithmetic_operation = operation 
 
     # method to print results in an animated way
     def animated(self, number1,number2, result):
