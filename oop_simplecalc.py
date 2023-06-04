@@ -1,6 +1,6 @@
 # Redo the Simple Calculator with OOP
 from ui_class import UI
-from calculator_class import Calculator
+from calculator_class import Calculator, ScientificCalculator
 
 def Introduction():
     import time
